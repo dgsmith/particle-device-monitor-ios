@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56E265E11C90FCD700C0D2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E265E01C90FCD700C0D2FE /* AppDelegate.swift */; };
+		56E265E31C90FCD700C0D2FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E265E21C90FCD700C0D2FE /* ViewController.swift */; };
+		56E265E61C90FCD700C0D2FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E265E41C90FCD700C0D2FE /* Main.storyboard */; };
+		56E265E81C90FCD700C0D2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E265E71C90FCD700C0D2FE /* Assets.xcassets */; };
+		56E265EB1C90FCD700C0D2FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E265E91C90FCD700C0D2FE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		56E265DD1C90FCD700C0D2FE /* Particle Device Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Particle Device Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56E265E01C90FCD700C0D2FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56E265E21C90FCD700C0D2FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56E265E51C90FCD700C0D2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56E265E71C90FCD700C0D2FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56E265EA1C90FCD700C0D2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56E265EC1C90FCD700C0D2FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56E265DA1C90FCD700C0D2FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56E265D41C90FCD700C0D2FE = {
+			isa = PBXGroup;
+			children = (
+				56E265DF1C90FCD700C0D2FE /* Particle Device Monitor */,
+				56E265DE1C90FCD700C0D2FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56E265DE1C90FCD700C0D2FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56E265DD1C90FCD700C0D2FE /* Particle Device Monitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56E265DF1C90FCD700C0D2FE /* Particle Device Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				56E265E01C90FCD700C0D2FE /* AppDelegate.swift */,
+				56E265E21C90FCD700C0D2FE /* ViewController.swift */,
+				56E265E41C90FCD700C0D2FE /* Main.storyboard */,
+				56E265E71C90FCD700C0D2FE /* Assets.xcassets */,
+				56E265E91C90FCD700C0D2FE /* LaunchScreen.storyboard */,
+				56E265EC1C90FCD700C0D2FE /* Info.plist */,
+			);
+			path = "Particle Device Monitor";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56E265DC1C90FCD700C0D2FE /* Particle Device Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56E265EF1C90FCD700C0D2FE /* Build configuration list for PBXNativeTarget "Particle Device Monitor" */;
+			buildPhases = (
+				56E265D91C90FCD700C0D2FE /* Sources */,
+				56E265DA1C90FCD700C0D2FE /* Frameworks */,
+				56E265DB1C90FCD700C0D2FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Particle Device Monitor";
+			productName = "Particle Device Monitor";
+			productReference = 56E265DD1C90FCD700C0D2FE /* Particle Device Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56E265D51C90FCD700C0D2FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Grayson Smith";
+				TargetAttributes = {
+					56E265DC1C90FCD700C0D2FE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 56E265D81C90FCD700C0D2FE /* Build configuration list for PBXProject "Particle Device Monitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56E265D41C90FCD700C0D2FE;
+			productRefGroup = 56E265DE1C90FCD700C0D2FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56E265DC1C90FCD700C0D2FE /* Particle Device Monitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56E265DB1C90FCD700C0D2FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56E265EB1C90FCD700C0D2FE /* LaunchScreen.storyboard in Resources */,
+				56E265E81C90FCD700C0D2FE /* Assets.xcassets in Resources */,
+				56E265E61C90FCD700C0D2FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56E265D91C90FCD700C0D2FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56E265E31C90FCD700C0D2FE /* ViewController.swift in Sources */,
+				56E265E11C90FCD700C0D2FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56E265E41C90FCD700C0D2FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56E265E51C90FCD700C0D2FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56E265E91C90FCD700C0D2FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56E265EA1C90FCD700C0D2FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56E265ED1C90FCD700C0D2FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56E265EE1C90FCD700C0D2FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56E265F01C90FCD700C0D2FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Particle Device Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grayson.Particle-Device-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56E265F11C90FCD700C0D2FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Particle Device Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grayson.Particle-Device-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56E265D81C90FCD700C0D2FE /* Build configuration list for PBXProject "Particle Device Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56E265ED1C90FCD700C0D2FE /* Debug */,
+				56E265EE1C90FCD700C0D2FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56E265EF1C90FCD700C0D2FE /* Build configuration list for PBXNativeTarget "Particle Device Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56E265F01C90FCD700C0D2FE /* Debug */,
+				56E265F11C90FCD700C0D2FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56E265D51C90FCD700C0D2FE /* Project object */;
+}
