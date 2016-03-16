@@ -184,20 +184,8 @@ class DeviceListViewController: UIViewController, UITableViewDelegate, UITableVi
                 cell.deviceNameLabel.text = "<no name>"
             }
             
-            switch (self.devices[indexPath.row].type)
-            {
-            case .Core:
-                cell.deviceImageView.image = UIImage(named: "imgCore")
-                cell.deviceTypeLabel.text = "Core"
-            case .Electron:
-                cell.deviceImageView.image = UIImage(named: "imgElectron")
-                cell.deviceTypeLabel.text = "Electron"
-            default:
-                cell.deviceImageView.image = UIImage(named: "imgPhoton")
-                cell.deviceTypeLabel.text = "Photon"
-                
-            }
-            
+            cell.deviceImageView.image = UIImage(named: "img\(self.devices[indexPath.row].type.description())")
+            cell.deviceTypeLabel.text = self.devices[indexPath.row].type.description()            
             cell.deviceIDLabel.text = devices[indexPath.row].id.uppercaseString
             
             let online = self.devices[indexPath.row].connected

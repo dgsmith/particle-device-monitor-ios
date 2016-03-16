@@ -48,35 +48,6 @@ class DeviceMonitorViewController: UIViewController, UITableViewDelegate, UITabl
         for variable in tempVariables {
             self.variables.append((variable.0, variable.1, ""))
             self.getValueForVariable(variable.0)
-            
-            self.variableTableView.dataSource = self
-            self.variableTableView.delegate = self
-            self.variableTableView.reloadData()
-            
-            self.functionTableView.dataSource = self
-            self.functionTableView.delegate = self
-            self.functionTableView.reloadData()
-            
-//            device.getVariable(variable.0, completion: { (result, error) -> Void in
-//                if let error = error {
-//                    print("Failed to retrieve variable, error: \(error)")
-//                    self.variables.append((variable.0, variable.1, ""))
-//                } else if let result = result {
-//                    debugPrint(result.description)
-//                    self.variables.append((variable.0, variable.1, String(result)))
-//                }
-//                if tempVariables.last!.0 == variable.0 {
-//                    dispatch_async(dispatch_get_main_queue()) {
-//                        self.variableTableView.dataSource = self
-//                        self.variableTableView.delegate = self
-//                        self.variableTableView.reloadData()
-//                        
-//                        self.functionTableView.dataSource = self
-//                        self.functionTableView.delegate = self
-//                        self.functionTableView.reloadData()
-//                    }
-//                }
-//            })
         }
         
         // Functions
@@ -85,6 +56,13 @@ class DeviceMonitorViewController: UIViewController, UITableViewDelegate, UITabl
             return firstFunction < secondFunction
         }
         
+        self.variableTableView.dataSource = self
+        self.variableTableView.delegate = self
+        self.variableTableView.reloadData()
+        
+        self.functionTableView.dataSource = self
+        self.functionTableView.delegate = self
+        self.functionTableView.reloadData()
     }
     
     // MARK: - UITableViewDataSource methods
@@ -143,16 +121,6 @@ class DeviceMonitorViewController: UIViewController, UITableViewDelegate, UITabl
         
         if (tableView == self.variableTableView) {
             dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-//                device.getVariable(self.variables[indexPath.row].0, completion: { (result, error) -> Void in
-//                    if let error = error {
-//                        print("Failed to retrieve variable, error: \(error)")
-//                    } else if let result = result {
-//                        self.variables[indexPath.row].2 = String(result)
-//                        dispatch_async(dispatch_get_main_queue()) {
-//                            self.variableTableView.reloadData()
-//                        }
-//                    }
-//                })
                 self.getValueForVariable(self.variables[indexPath.row].0)
             }
         } else {

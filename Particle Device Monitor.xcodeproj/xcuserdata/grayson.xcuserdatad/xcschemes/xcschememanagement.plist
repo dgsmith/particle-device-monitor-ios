@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Complication - Particle Device Monitor Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>Glance - Particle Device Monitor Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>Notification - Particle Device Monitor Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>Particle Device Monitor Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>Particle Device Monitor.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +32,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>56A171A01C94BC6100201CBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>56E265DC1C90FCD700C0D2FE</key>
 		<dict>
 			<key>primary</key>

@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var session: WCSession? {
+        didSet {
+            if let session = session {
+                session.delegate = self
+                session.activateSession()
+            }
+        }
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -42,5 +50,65 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension SparkDeviceType {
+    func description() -> String {
+        switch (self) {
+        case .Core:
+            return "Core"
+        case .Photon:
+            return "Photon"
+        case .Electron:
+            return "Electron"
+        }
+    }
+}
+
+extension AppDelegate: WCSessionDelegate {
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        if let deviceRequest = message["devices"] as? String where deviceRequest == "please" {
+            // gotta say please
+            if SparkCloud.sharedInstance().loggedInUsername != nil {
+                SparkCloud.sharedInstance().getDevices({ (devices, error) -> Void in
+                    if let e = error {
+                        replyHandler(["error": e])
+                    } else {
+                        if let d = devices {
+                            var devices = d as! [SparkDevice]
+                            
+                            // Sort alphabetically
+                            devices.sortInPlace({ (firstDevice:SparkDevice, secondDevice:SparkDevice) -> Bool in
+                                if let n1 = firstDevice.name {
+                                    if let n2 = secondDevice.name {
+                                        return n1 < n2 //firstDevice.name < secondDevice.name
+                                    }
+                                }
+                                return false;
+                            })
+                            
+                            // then sort by device type
+                            devices.sortInPlace({ (firstDevice:SparkDevice, secondDevice:SparkDevice) -> Bool in
+                                return firstDevice.type.rawValue > secondDevice.type.rawValue
+                            })
+                            
+                            // and then by online/offline
+                            devices.sortInPlace({ (firstDevice:SparkDevice, secondDevice:SparkDevice) -> Bool in
+                                return firstDevice.connected && !secondDevice.connected
+                            })
+                            
+                            var devicesToSend: [Dictionary<String,Dictionary<String,AnyObject>>] = []
+                            for device in devices {
+                                devicesToSend.append([device.id: ["name": device.name!]])
+                                devicesToSend.append([device.id: ["type": device.type.description()]])
+                                devicesToSend.append([device.id: ["isOnline": device.connected]])
+                                
+                            }
+                        }
+                    }
+                })
+            }
+        }
+    }
 }
 

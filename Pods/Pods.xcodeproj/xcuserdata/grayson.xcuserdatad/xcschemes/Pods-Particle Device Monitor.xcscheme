@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '67C0A1C4F5D8424C49DC6B77'
+               BlueprintIdentifier = 'A14F00CFFD6098E523C0AAE2'
                BlueprintName = 'Pods-Particle Device Monitor'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-Particle Device Monitor.a'>

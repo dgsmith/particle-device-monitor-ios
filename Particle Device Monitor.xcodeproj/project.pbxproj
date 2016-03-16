@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		04982B677EB222AB5BBED076 /* libPods-Particle Device Monitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE6670EEC5B99BDCD1E690A /* libPods-Particle Device Monitor.a */; };
+		56A1719E1C94B13300201CBF /* FunctionCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1719D1C94B13300201CBF /* FunctionCallViewController.swift */; };
+		56A171A51C94BC6100201CBF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A171A31C94BC6100201CBF /* Interface.storyboard */; };
+		56A171A71C94BC6100201CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A171A61C94BC6100201CBF /* Assets.xcassets */; };
+		56A171AE1C94BC6100201CBF /* Particle Device Monitor Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 56A171AD1C94BC6100201CBF /* Particle Device Monitor Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		56A171B51C94BC6100201CBF /* DeviceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A171B41C94BC6100201CBF /* DeviceInterfaceController.swift */; };
+		56A171B71C94BC6100201CBF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A171B61C94BC6100201CBF /* ExtensionDelegate.swift */; };
+		56A171B91C94BC6100201CBF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A171B81C94BC6100201CBF /* NotificationController.swift */; };
+		56A171BB1C94BC6100201CBF /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A171BA1C94BC6100201CBF /* GlanceController.swift */; };
+		56A171BD1C94BC6100201CBF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A171BC1C94BC6100201CBF /* ComplicationController.swift */; };
+		56A171BF1C94BC6100201CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A171BE1C94BC6100201CBF /* Assets.xcassets */; };
+		56A171C31C94BC6100201CBF /* Particle Device Monitor Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 56A171A11C94BC6100201CBF /* Particle Device Monitor Watch.app */; };
 		56E265E11C90FCD700C0D2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E265E01C90FCD700C0D2FE /* AppDelegate.swift */; };
 		56E265E31C90FCD700C0D2FE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E265E21C90FCD700C0D2FE /* WelcomeViewController.swift */; };
 		56E265E61C90FCD700C0D2FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E265E41C90FCD700C0D2FE /* Main.storyboard */; };
@@ -20,8 +31,64 @@
 		56E265FC1C9251D600C0D2FE /* FunctionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E265FB1C9251D600C0D2FE /* FunctionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		56A171AF1C94BC6100201CBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56E265D51C90FCD700C0D2FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A171AC1C94BC6100201CBF;
+			remoteInfo = "Particle Device Monitor Watch Extension";
+		};
+		56A171C11C94BC6100201CBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56E265D51C90FCD700C0D2FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A171A01C94BC6100201CBF;
+			remoteInfo = "Particle Device Monitor Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56A171C71C94BC6100201CBF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				56A171AE1C94BC6100201CBF /* Particle Device Monitor Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A171CB1C94BC6100201CBF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				56A171C31C94BC6100201CBF /* Particle Device Monitor Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0F8DF2AD537A1C5D29E0E16E /* Pods-Particle Device Monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Particle Device Monitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Particle Device Monitor/Pods-Particle Device Monitor.release.xcconfig"; sourceTree = "<group>"; };
+		56A1719D1C94B13300201CBF /* FunctionCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionCallViewController.swift; sourceTree = "<group>"; };
+		56A171A11C94BC6100201CBF /* Particle Device Monitor Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Particle Device Monitor Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A171A41C94BC6100201CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		56A171A61C94BC6100201CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56A171A81C94BC6100201CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A171AD1C94BC6100201CBF /* Particle Device Monitor Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Particle Device Monitor Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A171B31C94BC6100201CBF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		56A171B41C94BC6100201CBF /* DeviceInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInterfaceController.swift; sourceTree = "<group>"; };
+		56A171B61C94BC6100201CBF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		56A171B81C94BC6100201CBF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		56A171BA1C94BC6100201CBF /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		56A171BC1C94BC6100201CBF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		56A171BE1C94BC6100201CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56A171C01C94BC6100201CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56E265DD1C90FCD700C0D2FE /* Particle Device Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Particle Device Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E265E01C90FCD700C0D2FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56E265E21C90FCD700C0D2FE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +108,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		56A171AA1C94BC6100201CBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56E265DA1C90FCD700C0D2FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,10 +126,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56A171A21C94BC6100201CBF /* Particle Device Monitor Watch */ = {
+			isa = PBXGroup;
+			children = (
+				56A171A31C94BC6100201CBF /* Interface.storyboard */,
+				56A171A61C94BC6100201CBF /* Assets.xcassets */,
+				56A171A81C94BC6100201CBF /* Info.plist */,
+			);
+			path = "Particle Device Monitor Watch";
+			sourceTree = "<group>";
+		};
+		56A171B11C94BC6100201CBF /* Particle Device Monitor Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				56A171B41C94BC6100201CBF /* DeviceInterfaceController.swift */,
+				56A171B61C94BC6100201CBF /* ExtensionDelegate.swift */,
+				56A171B81C94BC6100201CBF /* NotificationController.swift */,
+				56A171BA1C94BC6100201CBF /* GlanceController.swift */,
+				56A171BC1C94BC6100201CBF /* ComplicationController.swift */,
+				56A171BE1C94BC6100201CBF /* Assets.xcassets */,
+				56A171C01C94BC6100201CBF /* Info.plist */,
+				56A171B21C94BC6100201CBF /* Supporting Files */,
+			);
+			path = "Particle Device Monitor Watch Extension";
+			sourceTree = "<group>";
+		};
+		56A171B21C94BC6100201CBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56A171B31C94BC6100201CBF /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		56E265D41C90FCD700C0D2FE = {
 			isa = PBXGroup;
 			children = (
 				56E265DF1C90FCD700C0D2FE /* Particle Device Monitor */,
+				56A171A21C94BC6100201CBF /* Particle Device Monitor Watch */,
+				56A171B11C94BC6100201CBF /* Particle Device Monitor Watch Extension */,
 				56E265DE1C90FCD700C0D2FE /* Products */,
 				FB2D4BFEBC5BC331D7AD2635 /* Pods */,
 				DADD2AE3CAD35F3AE238FF0D /* Frameworks */,
@@ -66,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				56E265DD1C90FCD700C0D2FE /* Particle Device Monitor.app */,
+				56A171A11C94BC6100201CBF /* Particle Device Monitor Watch.app */,
+				56A171AD1C94BC6100201CBF /* Particle Device Monitor Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +188,7 @@
 				56E265E21C90FCD700C0D2FE /* WelcomeViewController.swift */,
 				56E265F31C910BFD00C0D2FE /* DeviceListViewController.swift */,
 				56E265F71C91201D00C0D2FE /* DeviceMonitorViewController.swift */,
+				56A1719D1C94B13300201CBF /* FunctionCallViewController.swift */,
 				56E265F51C9117D100C0D2FE /* DeviceTableViewCell.swift */,
 				56E265F91C9251CC00C0D2FE /* VariableTableViewCell.swift */,
 				56E265FB1C9251D600C0D2FE /* FunctionTableViewCell.swift */,
@@ -110,6 +222,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		56A171A01C94BC6100201CBF /* Particle Device Monitor Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A171C81C94BC6100201CBF /* Build configuration list for PBXNativeTarget "Particle Device Monitor Watch" */;
+			buildPhases = (
+				56A1719F1C94BC6100201CBF /* Resources */,
+				56A171C71C94BC6100201CBF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A171B01C94BC6100201CBF /* PBXTargetDependency */,
+			);
+			name = "Particle Device Monitor Watch";
+			productName = "Particle Device Monitor Watch";
+			productReference = 56A171A11C94BC6100201CBF /* Particle Device Monitor Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		56A171AC1C94BC6100201CBF /* Particle Device Monitor Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A171C41C94BC6100201CBF /* Build configuration list for PBXNativeTarget "Particle Device Monitor Watch Extension" */;
+			buildPhases = (
+				56A171A91C94BC6100201CBF /* Sources */,
+				56A171AA1C94BC6100201CBF /* Frameworks */,
+				56A171AB1C94BC6100201CBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Particle Device Monitor Watch Extension";
+			productName = "Particle Device Monitor Watch Extension";
+			productReference = 56A171AD1C94BC6100201CBF /* Particle Device Monitor Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		56E265DC1C90FCD700C0D2FE /* Particle Device Monitor */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56E265EF1C90FCD700C0D2FE /* Build configuration list for PBXNativeTarget "Particle Device Monitor" */;
@@ -120,10 +266,12 @@
 				56E265DB1C90FCD700C0D2FE /* Resources */,
 				05EF2C49FEBF3DB15EE6D5DC /* Embed Pods Frameworks */,
 				2A4DAE8129794EF211E85FB5 /* Copy Pods Resources */,
+				56A171CB1C94BC6100201CBF /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				56A171C21C94BC6100201CBF /* PBXTargetDependency */,
 			);
 			name = "Particle Device Monitor";
 			productName = "Particle Device Monitor";
@@ -140,6 +288,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Grayson Smith";
 				TargetAttributes = {
+					56A171A01C94BC6100201CBF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					56A171AC1C94BC6100201CBF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					56E265DC1C90FCD700C0D2FE = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -159,11 +313,30 @@
 			projectRoot = "";
 			targets = (
 				56E265DC1C90FCD700C0D2FE /* Particle Device Monitor */,
+				56A171A01C94BC6100201CBF /* Particle Device Monitor Watch */,
+				56A171AC1C94BC6100201CBF /* Particle Device Monitor Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		56A1719F1C94BC6100201CBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A171A71C94BC6100201CBF /* Assets.xcassets in Resources */,
+				56A171A51C94BC6100201CBF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A171AB1C94BC6100201CBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A171BF1C94BC6100201CBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56E265DB1C90FCD700C0D2FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,10 +398,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		56A171A91C94BC6100201CBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A171B91C94BC6100201CBF /* NotificationController.swift in Sources */,
+				56A171B71C94BC6100201CBF /* ExtensionDelegate.swift in Sources */,
+				56A171BD1C94BC6100201CBF /* ComplicationController.swift in Sources */,
+				56A171B51C94BC6100201CBF /* DeviceInterfaceController.swift in Sources */,
+				56A171BB1C94BC6100201CBF /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56E265D91C90FCD700C0D2FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A1719E1C94B13300201CBF /* FunctionCallViewController.swift in Sources */,
 				56E265FC1C9251D600C0D2FE /* FunctionTableViewCell.swift in Sources */,
 				56E265E31C90FCD700C0D2FE /* WelcomeViewController.swift in Sources */,
 				56E265FA1C9251CC00C0D2FE /* VariableTableViewCell.swift in Sources */,
@@ -241,7 +427,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		56A171B01C94BC6100201CBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A171AC1C94BC6100201CBF /* Particle Device Monitor Watch Extension */;
+			targetProxy = 56A171AF1C94BC6100201CBF /* PBXContainerItemProxy */;
+		};
+		56A171C21C94BC6100201CBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A171A01C94BC6100201CBF /* Particle Device Monitor Watch */;
+			targetProxy = 56A171C11C94BC6100201CBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		56A171A31C94BC6100201CBF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A171A41C94BC6100201CBF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		56E265E41C90FCD700C0D2FE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,6 +468,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		56A171C51C94BC6100201CBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Particle Device Monitor Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grayson.Particle-Device-Monitor.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		56A171C61C94BC6100201CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Particle Device Monitor Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grayson.Particle-Device-Monitor.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		56A171C91C94BC6100201CBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Particle_Device_Monitor_Watch_Extension;
+				INFOPLIST_FILE = "Particle Device Monitor Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grayson.Particle-Device-Monitor.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		56A171CA1C94BC6100201CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Particle_Device_Monitor_Watch_Extension;
+				INFOPLIST_FILE = "Particle Device Monitor Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grayson.Particle-Device-Monitor.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		56E265ED1C90FCD700C0D2FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -373,6 +642,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		56A171C41C94BC6100201CBF /* Build configuration list for PBXNativeTarget "Particle Device Monitor Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A171C51C94BC6100201CBF /* Debug */,
+				56A171C61C94BC6100201CBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56A171C81C94BC6100201CBF /* Build configuration list for PBXNativeTarget "Particle Device Monitor Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A171C91C94BC6100201CBF /* Debug */,
+				56A171CA1C94BC6100201CBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		56E265D81C90FCD700C0D2FE /* Build configuration list for PBXProject "Particle Device Monitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
