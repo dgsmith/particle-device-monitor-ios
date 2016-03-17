@@ -20,6 +20,7 @@ class DeviceListViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var selectedDevice : SparkDevice? = nil
     var refreshControlAdded : Bool = false
+    var comingFromWelcome: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,15 @@ class DeviceListViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     override func viewWillAppear(animated: Bool) {
+        if let navController = self.navigationController {
+            if comingFromWelcome {
+                navController.setNavigationBarHidden(true, animated: false)
+                comingFromWelcome = false
+            } else {
+                navController.setNavigationBarHidden(true, animated: true)
+            }
+        }
+        
         if SparkCloud.sharedInstance().loggedInUsername != nil
         {
             self.loadDevices()
@@ -38,6 +48,13 @@ class DeviceListViewController: UIViewController, UITableViewDelegate, UITableVi
             self.deviceIDflashingTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "flashingTimerFunc:", userInfo: nil, repeats: true)
         }
         super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        if let navController = self.navigationController {
+            navController.setNavigationBarHidden(false, animated: true)
+        }
+        super.viewWillDisappear(animated)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

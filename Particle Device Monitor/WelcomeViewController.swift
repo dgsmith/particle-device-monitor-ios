@@ -23,6 +23,30 @@ class WelcomeViewController: UIViewController, SparkSetupMainControllerDelegate 
 
     }
     
+    override func viewWillAppear(animated: Bool) {
+        if let navController = self.navigationController {
+            navController.setNavigationBarHidden(true, animated: false)
+        }
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        if let navController = self.navigationController {
+            navController.setNavigationBarHidden(false, animated: false)
+        }
+        super.viewWillDisappear(animated)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "select"
+        {
+            if let deviceListView = segue.destinationViewController as? DeviceListViewController
+            {
+                deviceListView.comingFromWelcome = true
+            }
+        }
+    }
+    
     func sparkSetupViewController(controller: SparkSetupMainController!, didFinishWithResult result: SparkSetupMainControllerResult, device: SparkDevice!) {
         
         if result == .LoggedIn

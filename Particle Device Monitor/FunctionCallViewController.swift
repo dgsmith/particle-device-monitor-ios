@@ -16,12 +16,21 @@ class FunctionCallViewController : UIViewController {
     @IBOutlet weak var args: UITextField!
     @IBOutlet weak var callButton: UIButton!
     @IBOutlet weak var response: UILabel!
+    @IBOutlet weak var backButton: UIButton!
     
     override func viewDidLoad() {
+        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: "screenEdgeSwiped:")
+        edgePan.edges = .Left
+        
+        view.addGestureRecognizer(edgePan)
+        
         super.viewDidLoad()
     }
     
     override func viewWillAppear(animated: Bool) {
+        guard let function = self.function else { return }
+        
+        self.name.text = "\(function)(String command)"
         
         super.viewWillAppear(animated)
     }
@@ -37,6 +46,20 @@ class FunctionCallViewController : UIViewController {
                     self.response.text = String(response)
                 }
             })
+        }
+    }
+    
+    @IBAction func backButtonHit(sender: AnyObject) {
+        if let navController = self.navigationController {
+            navController.popViewControllerAnimated(true)
+        }
+    }
+    
+    func screenEdgeSwiped(recognizer: UIScreenEdgePanGestureRecognizer) {
+        if recognizer.state == .Recognized {
+            if let navController = self.navigationController {
+                navController.popViewControllerAnimated(true)
+            }
         }
     }
     

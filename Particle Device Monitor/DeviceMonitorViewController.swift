@@ -11,6 +11,7 @@ import UIKit
 class DeviceMonitorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var device : SparkDevice?
+    var selectedFunction: String?
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var variableTableView: UITableView!
@@ -29,6 +30,17 @@ class DeviceMonitorViewController: UIViewController, UITableViewDelegate, UITabl
             self.loadDeviceInformation()
         }
         super.viewWillAppear(animated)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "function_call"
+        {
+            if let functionView = segue.destinationViewController as? FunctionCallViewController
+            {
+                functionView.device = self.device!
+                functionView.function = self.selectedFunction!
+            }
+        }
     }
     
     func loadDeviceInformation() {
@@ -124,7 +136,8 @@ class DeviceMonitorViewController: UIViewController, UITableViewDelegate, UITabl
                 self.getValueForVariable(self.variables[indexPath.row].0)
             }
         } else {
-            
+            self.selectedFunction = self.functions[indexPath.row]
+            self.performSegueWithIdentifier("function_call", sender: self)
         }
     }
     
